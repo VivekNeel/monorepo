@@ -5,7 +5,7 @@
  * @format
  * @flow strict-local
  */
-
+import {functions} from 'core';
 import React from 'react';
 import {
   SafeAreaView,
@@ -15,7 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
+console.log('....vivek', functions.utils('aa'));
 import {
   Header,
   LearnMoreLinks,

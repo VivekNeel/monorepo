@@ -5,7 +5,8 @@
   "private": true,
   "workspaces": [
     "web",
-    "mobile"
+    "mobile",
+    "core"
   ],
   "scripts": {
     "dev": "yarn --cwd web dev",

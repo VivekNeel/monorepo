@@ -1,10 +1,13 @@
 import Head from "next/head";
+import { functions } from "core";
 
+console.log("......functions", functions.utils("vivek"));
+import React from "react";
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Monorepo App</title>
+        <title>Create Next js App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
