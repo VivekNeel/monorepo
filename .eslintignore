@@ -1,0 +1,8 @@
+flow-typed/**/*.*
+mobile/android/**/*.*
+mobile/ios/**/*.*
+**/node_modules/**/*.*
+**/.next/**/*.*
+**/assets/**/*.*
+**/build/**/*.*
+**/static/**/*.*

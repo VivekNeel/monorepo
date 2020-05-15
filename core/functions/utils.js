@@ -1,5 +1,7 @@
-const isEmpty = (s) => {
-  console.log("vivek", s);
+// @flow
+
+const isEmpty = (s: string) => {
+  console.log('vivek', s);
 };
 
 export default isEmpty;

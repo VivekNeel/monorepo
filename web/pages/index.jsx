@@ -1,9 +1,14 @@
-import Head from "next/head";
-import { functions } from "core";
+// @flow
 
-console.log("......functions", functions.utils("vivek"));
-import React from "react";
-export default function Home() {
+import Head from 'next/head';
+import { functions } from 'core';
+import React from 'react';
+
+type Props = {
+  name: string
+}
+console.log('.....aa', functions.utils('kumar'));
+export default function Home(props: Props) {
   return (
     <div className="container">
       <Head>
@@ -13,11 +18,15 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to
+          {' '}
+          <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Get started by editing
+          {' '}
+          <code>pages/index.js</code>
         </p>
 
         <div className="grid">
@@ -57,12 +66,14 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by
+          {' '}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
-      <style jsx>{`
+      <style jsx>
+        {`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -191,9 +202,11 @@ export default function Home() {
             flex-direction: column;
           }
         }
-      `}</style>
+      `}
+      </style>
 
-      <style jsx global>{`
+      <style jsx global>
+        {`
         html,
         body {
           padding: 0;
@@ -206,7 +219,8 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}
+      </style>
     </div>
   );
 }
