@@ -28,6 +28,8 @@
     "start": "yarn --cwd web start",
     "android": "yarn workspace mobile react-native run-android",
     "ios": "yarn workspace mobile react-native run-ios",
-    "nodestart": "yarn workspace mobile react-native start"
+    "nodestart": "yarn workspace mobile react-native start",
+    "flow:check": "flow check",
+    "lint:check": "eslint --ext .js --ext .jsx ."
   }
 }

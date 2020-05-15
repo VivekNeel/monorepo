@@ -20,11 +20,11 @@ export default function Home(props: Props) {
         <h1 className="title">
           Welcome to
           {' '}
-          <a href="https://nextjs.org">Next.js!</a>
+          <a href="https://nextjs.org">Vivek.js!</a>
         </h1>
 
         <p className="description">
-          Get started by editing
+          Get started by a
           {' '}
           <code>pages/index.js</code>
         </p>

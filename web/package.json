@@ -10,13 +10,15 @@
   "dependencies": {
     "babel-plugin-transform-flow-strip-types": "6.22.0",
     "core": "1.0.0",
+    "flow-bin": "0.77.0",
     "next": "9.4.0",
     "next-transpile-modules": "^3.3.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "flow-bin": "0.77.0"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-flow": "^7.9.0",
     "next-compose-plugins": "^2.2.0",
     "next-plugin-custom-babel-config": "^1.0.2"
   }
