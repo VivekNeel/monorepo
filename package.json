@@ -4,9 +4,7 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "web",
-    "mobile",
-    "core"
+    "packages/*"
   ],
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -23,10 +21,10 @@
     "flow-typed": "^2.5.1"
     },
   "scripts": {
-    "dev": "yarn --cwd web dev",
+    "dev": "yarn --cwd packages/web dev",
     "build": "yarn --cwd web build",
     "start": "yarn --cwd web start",
-    "android": "yarn workspace mobile react-native run-android",
+    "android": "yarn workspace packages/mobile react-native run-android",
     "ios": "yarn workspace mobile react-native run-ios",
     "nodestart": "yarn workspace mobile react-native start",
     "flow:check": "flow check",
