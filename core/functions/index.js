@@ -1,3 +1,4 @@
-import utils from "./utils";
+import utils from './utils';
+import useSlider from './useSlider';
 
-export { utils };
+export { utils, useSlider };

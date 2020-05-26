@@ -1,8 +1,9 @@
 [ignore]
+.*/mobile/node_modules/react_native/.*
+.*/mobile/node_modules/react_native/Libraries/.*
 .*\/web\/node_modules\/draft-js\/lib\/.*.js.flow.*
 ; We fork some components by platform
 .*/*[.]android.js
-
 ; Ignore "BUCK" generated dirs
 <PROJECT_ROOT>/\.buckd/
 
@@ -12,10 +13,9 @@
 ; Ignore duplicate module providers
 ; For RN Apps installed via npm, "Libraries" folder is inside
 ; "node_modules/react-native" but in the source repo it is in the root
-mobile/node_modules/Libraries/react-native/React.js
 
 ; Ignore polyfills
-mobile/node_modules/Libraries/react-native/polyfills/.*
+.*/mobile/node_modules/Libraries/react-native/polyfills/.*
 
 ; These should not be required directly
 ; require from fbjs/lib instead: require('fbjs/lib/warning')
@@ -27,6 +27,7 @@ node_modules/warning/.*
 
 
 [untyped]
+.*/mobile/node_modules/react-native/*
 .*/mobile/node_modules/@react-native-community/cli/.*/.*
 .*/mobile/node_modules/@callstack/react-theme-provider/lib/index.js
 .*/mobile/node_modules/react-native/Libraries/Image/*
