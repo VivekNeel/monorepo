@@ -72,14 +72,14 @@ const App: () => React$Node = () => {
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
-              <Text style={styles.footer}>{count}</Text>
+              <Text style={styles.footer}>{"count"}</Text>
             </View>
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
-                {count}
+                {"count"}
                 {' '}
                 <Text style={styles.highlight}>App.js</Text>
                 {' '}
