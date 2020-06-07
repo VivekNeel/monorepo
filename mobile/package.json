@@ -2,7 +2,6 @@
   "name": "mobile",
   "version": "0.0.1",
   "private": true,
-  "flat": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -11,10 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.11.0",
+    "@react-native-community/netinfo": "^5.9.2",
+    "core": "1.0.0",
     "react": "16.13.1",
     "react-native": "0.62.2",
     "react-native-svg-transformer": "^0.14.3",
-    "core": "1.0.0"
+    "react-relay": "^9.1.0",
+    "react-relay-offline": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -30,7 +33,12 @@
     "nohoist": [
       "react-native",
       "react-native/**",
-      "@babel/runtime"
+      "@babel/runtime",
+      "@react-native-community/async-storage",
+      "@react-native-community/netinfo",
+      "react-relay-offline",
+      "react-relay",
+      "**@wora/**"
     ]
   },
   "jest": {

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
-  "flat": true,
    "private": true,
    "dependencies": {
      "react": "16.13.1"}

@@ -16,8 +16,11 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {
+  QueryRenderer,
+} from 'react-relay-offline';
 
-console.log('....vivek', functions.utils('aa'));
+console.log('....vivek', functions.utils('aa'), QueryRenderer);
 
 const styles = StyleSheet.create({
   scrollView: {
@@ -72,14 +75,14 @@ const App: () => React$Node = () => {
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
-              <Text style={styles.footer}>{"count"}</Text>
+              <Text style={styles.footer}>{count}</Text>
             </View>
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
-                {"count"}
+                {count}
                 {' '}
                 <Text style={styles.highlight}>App.js</Text>
                 {' '}
