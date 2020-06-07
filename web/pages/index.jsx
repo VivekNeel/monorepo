@@ -1,17 +1,21 @@
 // @flow
 
 import Head from 'next/head';
-import { functions } from 'core';
+import { useSlider } from 'core/functions';
 import React from 'react';
+import {
+  CalendarCheck,
+  CheckOutline,
+} from 'mdi-material-ui';
+import { Box } from '@material-ui/core';
 
 type Props = {
   name: string
 }
-console.log('.....aa', functions.utils('kumar'));
 export default function Home(props: Props) {
   const {
     count,
-  } = functions.useSlider();
+  } = useSlider();
   return (
     <div className="container">
       <Head>
@@ -23,12 +27,13 @@ export default function Home(props: Props) {
         <h1>
           {`Timer running from common module core: ${count}`}
         </h1>
-
-        <p className="description">
-          Get started by a
+        <CalendarCheck />
+        <CheckOutline />
+        <Box className="description">
+          Get started by
           {' '}
           <code>pages/index.js</code>
-        </p>
+        </Box>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">

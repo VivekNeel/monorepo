@@ -25,7 +25,7 @@
     "flow-typed": "^2.5.1"
     },
   "scripts": {
-    "dev": "yarn --cwd packages/web dev",
+    "dev": "yarn --cwd web dev",
     "build": "yarn --cwd web build",
     "start": "yarn --cwd web start",
     "android": "yarn workspace packages/mobile react-native run-android",
